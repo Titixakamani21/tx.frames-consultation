@@ -32,9 +32,9 @@ export default function Intro() {
                 freelance clients.
               </p>
               <p className="text-sm leading-relaxed text-ink-muted">
-                With years of experience spanning product design and design
-                engineering, I help designers bridge the gap between craft
-                and career.
+                Based in Berlin, with years of experience spanning product
+                design and design engineering, I help designers bridge the
+                gap between craft and career.
               </p>
             </div>
           </div>

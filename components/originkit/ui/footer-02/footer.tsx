@@ -33,7 +33,7 @@ export function Footer() {
   return (
     <footer
       aria-label="Site footer"
-      className="relative isolate mx-auto w-full min-h-[600px] overflow-hidden rounded-[12px] bg-ink"
+      className="relative isolate mx-auto w-full min-h-[600px] overflow-hidden bg-ink"
     >
       <div className="relative z-10 flex flex-col gap-8 px-4 pt-10 pb-[260px] md:gap-12 md:px-12 md:pt-12 md:pb-[280px] lg:flex-row lg:items-stretch lg:justify-between lg:gap-0 lg:px-14 lg:pt-[72px] lg:pb-[260px]">
         {/* Brand */}
@@ -97,6 +97,23 @@ export function Footer() {
             ))}
           </ul>
         </nav>
+
+        {/* Email */}
+        <div className="w-full lg:w-auto lg:shrink-0">
+          <p className="label text-paper/50">Email</p>
+          <ul className="mt-4 flex flex-col gap-4">
+            <li>
+              <a
+                href="mailto:hey.titixa@gmail.com"
+                tabIndex={0}
+                aria-label="Email hey.titixa@gmail.com"
+                className="label relative inline-flex items-center text-paper/80 touch-manipulation transition-opacity duration-200 ease before:absolute before:-inset-y-2 before:-inset-x-1 before:content-[''] focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-paper [-webkit-tap-highlight-color:transparent] [@media(hover:hover)_and_(pointer:fine)]:hover:text-paper"
+              >
+                hey.titixa@gmail.com
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
 
       {/* Tetris board — decorative stack along the bottom */}

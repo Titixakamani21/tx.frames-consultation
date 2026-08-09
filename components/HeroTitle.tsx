@@ -3,16 +3,20 @@
 import { useEffect, useRef } from "react";
 import gsap from "gsap";
 
-function renderChars(word: string, extraClass: string) {
-  return word.split("").map((ch, i) => (
-    <span
-      key={i}
-      data-char
-      className={`inline-block will-change-transform ${extraClass}`}
-    >
-      {ch}
+function renderChars(word: string, extraClass: string = "") {
+  return (
+    <span className="inline-block whitespace-nowrap">
+      {word.split("").map((ch, i) => (
+        <span
+          key={i}
+          data-char
+          className={`inline-block will-change-transform ${extraClass}`}
+        >
+          {ch}
+        </span>
+      ))}
     </span>
-  ));
+  );
 }
 
 export default function HeroTitle() {
@@ -41,10 +45,14 @@ export default function HeroTitle() {
   return (
     <h1
       ref={headingRef}
-      className="mt-6 text-center font-serif text-[13vw] leading-[0.95] tracking-tight sm:text-[9vw] md:text-[7rem]"
+      className="text-center font-serif text-[13vw] font-semibold leading-[0.95] tracking-tight text-paper sm:text-[9vw] md:text-[7rem]"
     >
-      {renderChars("Titixa", "italic")}{" "}
-      {renderChars("Kamani", "font-sans font-extrabold not-italic")}
+      <span className="block">
+        {renderChars("for")} {renderChars("designers", "font-sans font-extrabold")}
+      </span>
+      <span className="block">
+        {renderChars("ready")} {renderChars("to")} {renderChars("grow.")}
+      </span>
     </h1>
   );
 }
