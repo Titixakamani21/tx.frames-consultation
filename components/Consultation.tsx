@@ -4,7 +4,7 @@ import CountUp from "./CountUp";
 const topics = [
   "Portfolio review & feedback",
   "Career strategy & next steps",
-  "Studying abroad — where & how",
+  "Studying abroad : where & how",
   "Breaking into the European market",
   "Freelance client acquisition",
   "Skill gaps & learning roadmap",
