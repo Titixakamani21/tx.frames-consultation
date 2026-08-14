@@ -49,7 +49,7 @@ export default function CTA() {
                 stroke="none"
               />
             </svg>
-            Join a 3k+ community of Designers + Design Engineers
+            Join a 4k+ community of Designers + Design Engineers
           </a>
         </Reveal>
       </div>
