@@ -5,7 +5,7 @@ const tiers = [
   {
     index: "M—1",
     name: "Monthly Check-in",
-    price: 1300,
+    price: 1599,
     popular: false,
     lines: [
       "One 60 minute call each month",
@@ -15,7 +15,7 @@ const tiers = [
   {
     index: "M—2",
     name: "Biweekly Guidance",
-    price: 2600,
+    price: 3199,
     popular: true,
     lines: [
       "Two 60 minute calls each month",
@@ -25,7 +25,7 @@ const tiers = [
   {
     index: "M—3",
     name: "Weekly Mentorship",
-    price: 3900,
+    price: 4799,
     popular: false,
     lines: [
       "Four 45 minute calls each month",

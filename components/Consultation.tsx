@@ -34,7 +34,7 @@ export default function Consultation() {
             </p>
 
             <p className="mt-10 font-serif text-5xl sm:text-6xl">
-              <CountUp to={699} prefix="₹" />{" "}
+              <CountUp to={799} prefix="₹" />{" "}
               <span className="label align-middle text-ink-muted">
                 / 30 min
               </span>
