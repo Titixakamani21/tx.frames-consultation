@@ -35,9 +35,9 @@ export function Footer() {
       aria-label="Site footer"
       className="relative isolate mx-auto w-full min-h-[600px] overflow-hidden bg-ink"
     >
-      <div className="relative z-10 flex flex-col gap-8 px-4 pt-10 pb-[260px] md:gap-12 md:px-12 md:pt-12 md:pb-[280px] lg:flex-row lg:items-stretch lg:justify-between lg:gap-0 lg:px-14 lg:pt-[72px] lg:pb-[260px]">
+      <div className="relative z-10 flex flex-col gap-8 px-4 pt-10 pb-[260px] md:gap-12 md:px-12 md:pt-12 md:pb-[280px] lg:grid lg:grid-cols-[1fr_auto_1fr] lg:items-start lg:gap-0 lg:px-14 lg:pt-[72px] lg:pb-[260px]">
         {/* Brand */}
-        <div className="flex w-full flex-col gap-6 md:gap-8 lg:w-[220px] lg:shrink-0 lg:justify-between lg:gap-0">
+        <div className="flex w-full flex-col gap-6 md:gap-8 lg:w-[220px] lg:shrink-0 lg:justify-self-start lg:justify-between lg:gap-0">
           <div className="flex flex-col gap-2 md:gap-4">
             <p className="font-serif text-3xl italic text-paper">
               Titixa Kamani
@@ -80,9 +80,12 @@ export function Footer() {
         </div>
 
         {/* Menu */}
-        <nav aria-label="Footer" className="w-full lg:w-auto lg:shrink-0">
+        <nav
+          aria-label="Footer"
+          className="w-full lg:w-auto lg:shrink-0 lg:justify-self-center lg:text-center"
+        >
           <p className="label text-paper/50">Menu</p>
-          <ul className="mt-4 flex flex-col gap-4">
+          <ul className="mt-4 flex flex-col gap-4 lg:items-center">
             {MENU_LINKS.map((link) => (
               <li key={link.label}>
                 <a
@@ -99,9 +102,9 @@ export function Footer() {
         </nav>
 
         {/* Email */}
-        <div className="w-full lg:w-auto lg:shrink-0">
+        <div className="w-full lg:w-auto lg:shrink-0 lg:justify-self-end lg:text-right">
           <p className="label text-paper/50">Email</p>
-          <ul className="mt-4 flex flex-col gap-4">
+          <ul className="mt-4 flex flex-col gap-4 lg:items-end">
             <li>
               <a
                 href="mailto:hey.titixa@gmail.com"
